@@ -1,0 +1,17 @@
+zuihou:
+  database:
+    isSeata: true
+    multiTenantType: DATASOURCE
+  swagger:
+    docket:
+      demo:
+        title: 演示服务
+        base-package: com.github.zuihou.demo.controller
+
+server:
+  port: 8770
+
+logging:
+  io.seata: debug
+  org.springframework.cloud.alibaba.seata.web: debug
+
